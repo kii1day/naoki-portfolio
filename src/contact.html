@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせフォーム</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500&display=swap" rel="stylesheet">
+
+
+    <!-- link -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header class="contact_header">
+        <h1 class="l_header-logo">
+            <a href="index.html" class="l_header-logo_link">Naoki Portfolio</a>
+        </h1>
+    </header>
+    <main class="l_main">
+        <seciton class="contact">
+            <div class="contact_contents">
+                <div class="l_container-sm">
+                    <div class="m_section_title">
+                        <h2 class="m_section_title_main">CONTACT</h2>
+                    </div>
+                    <form action="" class="contact_form">
+                        <dl class="contact_form_list">
+                            <dt class="contact_form_heading">
+                                会社名
+                            </dt>
+                            <dd class="contact_form_detail">
+                                <input type="text" class="contact_form_input" />
+                                <div class="contact_form_example-wrapper">
+                                    <span class="contact_form_example">例.株式会社SAMPLE</span>
+                                </div>
+                            </dd>
+                            <dt class="contact_form_heading">
+                                お名前<span class="contact_form_required">必須</span>
+                            </dt>
+                            <dd class="contact_form_detail">
+                                <input type="text" class="contact_form_input" />
+                                <div class="contact_form_example-wrapper">
+                                    <span class="contact_form_example">例.山田太郎</span>
+                                </div>
+                            </dd>
+                            <dt class="contact_form_heading">
+                                フリガナ<span class="contact_form_required">必須</span>
+                            </dt>
+                            <dd class="contact_form_detail">
+                                <input type="text" class="contact_form_input" />
+                                <div class="contact_form_example-wrapper">
+                                    <span class="contact_form_example">例.ヤマダタロウ</span>
+                                </div>
+                            </dd>
+                            <dt class="contact_form_heading">
+                                電話番号<span class="contact_form_required">必須</span>
+                            </dt>
+                            <dd class="contact_form_detail">
+                                <input type="text" class="contact_form_input" />
+                                <div class="contact_form_example-wrapper">
+                                    <span class="contact_form_example">例.09012345678</span>
+                                </div>
+                            </dd>
+                            <dt class="contact_form_heading">
+                                メールアドレス<span class="contact_form_required">必須</span>
+                            </dt>
+                            <dd class="contact_form_detail">
+                                <input type="text" class="contact_form_input" />
+                                <div class="contact_form_example-wrapper">
+                                    <span class="contact_form_example">例.sample@info</span>
+                                </div>
+                            </dd>
+                            <dt class="contact_form_heading">
+                                お問い合わせ項目<span class="contact_form_required">必須</span>
+                            </dt>
+                            <dd class="contact_form_detail">
+                                <ul class="contact_form_radio-list">
+                                    <li class="contact_form_radio-item">
+                                        <input type="radio" name="content" value="" id="1" class="contact_form_radio"
+                                            checked /><label for="1" class="contact_form_label">資料請求の希望</label>
+                                    </li>
+                                    <li class="contact_form_radio-item">
+                                        <input type="radio" name="content" value="" id="2"
+                                            class="contact_form_radio" /><label for="2"
+                                            class="contact_form_label">無料相談のお申込み</label>
+                                    </li>
+                                    <li class="contact_form_radio-item">
+                                        <input type="radio" name="content" value="" id="3"
+                                            class="contact_form_radio" /><label for="3"
+                                            class="contact_form_label">見積もりの希望</label>
+                                    </li>
+                                    <li class="contact_form_radio-item">
+                                        <input type="radio" name="content" value="" id="4"
+                                            class="contact_form_radio" /><label for="4"
+                                            class="contact_form_label">その他</label>
+                                    </li>
+                                </ul>
+                            </dd>
+                            <dt class="contact_form_heading__other">
+                                お問い合わせ内容<span class="contact_form_required">必須</span>
+                            </dt>
+                            <dd class="contact_form_detail__other">
+                                <textarea class="contact_form_textarea" placeholder="お問い合わせ内容をご記入ください。"></textarea>
+                            </dd>
+                            <label class="contact_form_accept-policy-inner" for="accept">
+                                <input type="checkbox" name="accept" id="accept" class="contact_form_checkbox" />
+                                <span class="contact_form_accept-txt">
+                                    <a href="" class="contact_form_accept-txt__primary-color">プライバシーポリシー</a>に同意する
+                                </span>
+                            </label>
+                        </dl>
+                        <div class="m_btn-wrapper contact_form_btn-wrapper">
+                            <label for="submit" class="m_btn contact_form_btn">
+                                <input type="submit" class="contact_form_submit" id="submit" value="送信する">
+                            </label>
+                        </div>
+                    </form>
+                    <!-- /.contact_form -->
+                </div>
+                <!-- /.l_container -->
+            </div>
+            <!-- /.l_contents -->
+        </seciton>
+        <!-- /.contact -->
+    </main>
+    <!-- /.l_main -->
+    <footer class="contact_footer">
+        <p class="contact_footer-copyright">
+            <small class="l_footer-copyright_txt">&copy; 2023 Sample.inc </small>
+        </p>
+    </footer>
+    <!-- /.contact_footer -->
+</body>
+
+</html>
